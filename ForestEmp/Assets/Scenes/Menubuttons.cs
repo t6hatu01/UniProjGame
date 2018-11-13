@@ -9,9 +9,10 @@ public class Menubuttons : MonoBehaviour {
     public GameObject OptionsPanel;
     public GameObject StartPanel;
     public GameObject MainPanel;
-	// Use this for initialization
+
 	void Start ()
     {
+
         MainPanel.SetActive(true);
         MenuPanel.SetActive(true);
         OptionsPanel.SetActive(false);
@@ -45,7 +46,7 @@ public class Menubuttons : MonoBehaviour {
 
     public void StartScene()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Demo");
     
     }
 
@@ -55,7 +56,7 @@ public class Menubuttons : MonoBehaviour {
     }
 
 
-    // Update is called once per frame
+
     void Update () {
 		
 	}
