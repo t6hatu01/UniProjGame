@@ -11,7 +11,6 @@ public class CardControl : MonoBehaviour {
     public GameObject YellowCard;
     public GameObject BrownCard;
     public GameObject OrangeCard;
-    //public GameObject Buy;
 
     // Use this for initialization
     void Start()
@@ -58,10 +57,7 @@ public class CardControl : MonoBehaviour {
         {
             YellowCard.SetActive(true);
         }
-        /*if (collision.gameObject.tag == "waypoint6")
-        {
-            DemoCard.SetActive(false);
-        }*/
+
         if (collision.gameObject.tag == "waypoint7")
         {
             PurpleCard.SetActive(true);
@@ -94,17 +90,14 @@ public class CardControl : MonoBehaviour {
         {
             YellowCard.SetActive(false);
         }
-        /*if (collision.gameObject.tag == "waypoint6")
-        {
-            DemoCard.SetActive(false);
-        }*/
+
         if (collision.gameObject.tag == "waypoint7")
         {
             PurpleCard.SetActive(false);
         }
     }
 
-    /*void ButtonClicked()
+    public void Skip()
     {
         BrownCard.SetActive(false);
         BlueCard.SetActive(false);
@@ -113,5 +106,16 @@ public class CardControl : MonoBehaviour {
         RedCard.SetActive(false);
         YellowCard.SetActive(false);
         PurpleCard.SetActive(false);
-    }*/
+    }
+
+    public void Buy()
+    {
+        BrownCard.SetActive(false);
+        BlueCard.SetActive(false);
+        PinkCard.SetActive(false);
+        OrangeCard.SetActive(false);
+        RedCard.SetActive(false);
+        YellowCard.SetActive(false);
+        PurpleCard.SetActive(false);
+    }
 }
